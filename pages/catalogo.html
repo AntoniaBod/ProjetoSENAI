@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawshop</title>
+    <link rel="shortcut icon" href="images/logo/logoDark.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/geral.css">
+</head>
+<body data-bs-theme="light">
+    <div id="root" class="container-fluid p-0 m-0">
+        <header>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="navbar-brand" href="#"><img id="imgLogo" src="images/logoWhite 1.svg" alt=""></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/sobrenos.html">Sobre Nós</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/catalogo.html">Catálogo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/cadastrar.html">Cadastrar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/esqueceusenha.html">Esqueceu a Senha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contatos.html">Contatos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/carrinho.html">Carrinho</a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                      <li>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="botaoTema">
+                          <label class="form-check-label" for="botaoTema">Tema : <span id="temaAtual">Claro</span></label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <section id="catalogoSection" class="container-fluid text-center mx-0 my-2 p-0">
+                <h3 class="my-3" style="color: var(--laranja);">CATÁLOGO DE PRODUTOS</h3>
+                <div id="produtosGrupo" class="d-flex justify-content-center gap-2 flex-wrap container-fluid my-2 p-0">
+                    <!-- DOCE -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h7 class="card-title" style="color: var(--laranja);">PÃO HAMBUGUER DOCE</h7>
+                          <p class="card-text">PÃO HAMBUGUER DOCE, PCT C/4 .</p>
+                          <h5 style="color: var(--verde);">R$10,00</h5>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paoDoceModal">
+                            VER MAIS
+                          </button>                          
+                        </div>
+                    </div>
+                    <!-- CARECA -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img2.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h7 class="card-title" style="color: var(--laranja);">PÃO HAMBUGUER CARECA</h7>
+                          <p class="card-text">PÃO HAMBUGUER CARECA,PCT C/ 8.</p>
+                          <h5 style="color: var(--verde);">R$16,00</h5>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paoCarecaModal">
+                            VER MAIS
+                          </button>                          
+                        </div>
+                    </div>
+                    <!-- VEGANO -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img3.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h7 class="card-title" style="color: var(--laranja);">PÃO HAMBUGUER VEGANO</h7>
+                          <p class="card-text">PÃO DE HAMBUGUER VEGANO,PCT C/ 4</p>
+                          <h5 style="color: var(--verde);">R$20,00</h5>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paoVeganoModal">
+                            VER MAIS
+                          </button>                          
+                        </div>
+                    </div>
+                    <!-- BATATA -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img4.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                          <h7 class="card-title" style="color: var(--laranja);">MINI PÃO DE HAM. DE BATATA</h7>
+                          <p class="card-text">MINIS PÃES DE BATATA,PCT C/12.</p>
+                          <h5 style="color: var(--verde);">R$24,00</h5>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paoBatataModal">
+                            VER MAIS
+                          </button>                          
+                        </div>
+                    </div>
+
+                </div>
+            
+            </section>
+        </main>
+
+        <footer class="text-center py-2">
+            <h6>Todos os direitos reservados a @AntoniaBod - 2023</h6>
+        </footer>
+  <div class="buttonModais"> 
+     <!-- DOCE MODAL -->
+      <div class="modal fade"  id="paoDoceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title fs-5" style="color: var(--laranja);" id="exampleModalLabel">PÃO HAMB. DOCE</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" style="height: 100px;" src="../images/img.png" alt="">
+              <h3 style="color: var(--verde);">R$10,00</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+              <a href="../pages/carrinho.html" class="btn btn-primary">Adicionar ao Carrinho</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--MODAL CARECA-->
+        <div class="modal fade" id="paoCarecaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title fs-5" style="color: var(--laranja);" id="exampleModalLabel">PÃO HAMB. CARECA</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" style="height: 100px;" src="../images/img2.png" alt="">
+              <h3 style="color: var(--verde);">R$16,00</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+              <a href="../pages/carrinho.html" class="btn btn-primary">Adicionar ao Carrinho</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- MODAL VEGANO -->
+        <div class="modal fade" id="paoVeganoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title fs-5" style="color: var(--laranja);" id="exampleModalLabel">PÃO HAMB. VEGANO</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" style="height: 100px;" src="../images/img3.png" alt="">
+              <h3 style="color: var(--verde);">R$20,00</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+              <a href="../pages/carrinho.html" class="btn btn-primary">Adicionar ao Carrinho</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- BATATA MODAL -->
+        <div class="modal fade" id="paoBatataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title fs-5" style="color: var(--laranja);" id="exampleModalLabel">MINI PÃO HAMB. BATATA</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="w-100" style="height: 100px;" src="../images/img4.png" alt="">
+              <h3 style="color: var(--verde);">R$24,00</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+              <a href="../pages/carrinho.html" class="btn btn-primary">Adicionar ao Carrinho</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="../Js/jquery-3.7.1.js"></script>
+<script src="../js/script.js"></script>
+<script src="../Js/script2.js"></script>
+</body>
+</html>

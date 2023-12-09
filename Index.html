@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawshop</title>
+    <link rel="shortcut icon" href="images/logo/logoDark.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/@media.css"  media="screen and (max-width : 768px)">
+</head>
+<body data-bs-theme="light">
+    <div id="root" class="container-fluid p-0 m-0">
+        <header>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse d-md-block justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="navbar-brand" href="#"><img id="imgLogo" src="images/logoWhite 1.svg" alt=""></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/sobrenos.html">Sobre Nós</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/catalogo.html">Catálogo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/cadastrar.html">Cadastrar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/esqueceusenha.html">Esqueceu a Senha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/contatos.html">Contatos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/carrinho.html">Carrinho</a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                      <li>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="botaoTema">
+                          <label class="form-check-label" for="botaoTema">Tema : <span id="temaAtual">Claro</span></label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <section id="carouselSection" class="container-fluid mx-0 my-2 p-0">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/banner/bannerMobile/bannerMobile.png" class="img-fluid d-md-none w-100"  alt="">
+                        <img src="images/banner/bannerTablet/bannerTablet.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt="">
+                        <img src="images/banner/bannerDesktop/bannerDesktop.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Origem</h2>
+                            <p style="font-size: 20pt;">Começamos na cozinha de casa, onde a receita foi testada n vezes, até chegar nesse sabor que conquistou o mundo.</p>
+                        </div>
+                    </div>
+                      <div class="carousel-item">
+                        <img src="images/banner/bannerMobile/bannerMobile2.png" class="img-fluid d-md-none w-100"  alt="">
+                        <img src="images/banner/bannerTablet/bannerTablet2.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt="">
+                        <img src="images/banner/bannerDesktop/bannerDesktop2.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Aceitação</h2>
+                            <p style="font-size: 20pt;">Os nossos produtos tem o sabor diferenciado, garantido assim uma experiência que vai querer repetir muitas vezes.</p>
+                        </div>
+                    </div>
+                      <div class="carousel-item">
+                        <img src="images/banner/bannerMobile/bannerMobile3.png" class="img-fluid d-md-none w-100"  alt="">
+                        <img src="images/banner/bannerTablet/bannerTablet3.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt="">
+                        <img src="images/banner/bannerDesktop/bannerDesktop3.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Qualidade</h2>
+                            <p style="font-size: 20pt;">A qualidade do produto, lhe proporciona experiência incriveis e inesqueciveis.</p>
+                        </div>
+                    </div>
+                      <div class="carousel-item">
+                        <img src="images/banner/bannerMobile/bannerMobile4.png" class="img-fluid d-md-none w-100"  alt="">
+                        <img src="images/banner/bannerTablet/bannerTablet4.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt="">
+                        <img src="images/banner/bannerDesktop/bannerDesktop4.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Matéria Prima e Preço</h2>
+                            <p style="font-size: 20pt;">Usamos o que tem de melhor para fazer as nossas receietas e garantir o melhor sabor.Garantimos o que tem de melhor para com preços justos e competitivos.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Próximo</span>
+                    </button>
+                  </div>
+            </section>
+        </main>
+
+        <footer class="text-center py-2">
+            <h6>Todos os direitos reservados a @AntoniaBod - 2023</h6>
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
+<script src="Js/jquery-3.7.1.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
