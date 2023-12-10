@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawshop</title>
-    <link rel="shortcut icon" href="images/logo/logoDark.svg" type="image/x-icon">
+    <title>ProjetoPãoHamburguer</title> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/geral.css">
 </head>
-<body id= "page" data-bs-theme="light">
+<body data-bs-theme="light">
     <div id="root" class="container-fluid p-0 m-0">
         <header>
             <nav class="navbar navbar-expand-md">
@@ -16,10 +15,10 @@
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                  <div class="collapse navbar-collapse d-md-block justify-content-between" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="navbar-brand" href="#"><img id="imgLogo" src="images/logoWhite 1.svg" alt=""></a>
+                        <a class="navbar-brand" href="#"><img id="imgLogo" style="width: 30px;" src="../images/logo.png" alt=""></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../Index.html">Home</a>
@@ -65,28 +64,28 @@
                   <aside id="formulario" class="w-50 d-flex flex-column justify-content-center" style="height: 300px;" >
                     <div id="alinhamentoForm" class="container w-75">
                       <form action="#" method="post">
-                        <div class="mb-2">
+                        <div class="mb-1">
                           <label for="nome" class="form-label">Nome Completo:</label>
                           <input type="nome" placeholder="Digite seu nome" class="form-control" id="nome" aria-describedby="nameHelp" required>
                         </div>
-                        <div class="mb-2">
+                        <div class="mb-1">
                           <label for="email" class="form-label">Email:</label>
                           <input type="email" placeholder="Digite seu E-mail" class="form-control" id="email" aria-describedby="emailHelp" required>
                         </div>
-                        <div class="mb-2">
+                        <div class="mb-1">
                           <label for="senha" class="form-label">Senha:</label>
-                          <input type="senha" placeholder="Digite sua Senha" class="form-control" id="senha" required>
+                          <input type="password" placeholder="Digite sua Senha" class="form-control" id="senha" required>
                         </div>
-                        <div class="mb-2">
+                        <div class="mb-1">
                           <label for="repeteSenha" class="form-label">Senha Novamente:</label>
-                          <input type="repeteSenha" placeholder="Digite a Senha novamente" class="form-control" id="repeteSenha" required>
+                          <input type="password" placeholder="Digite a Senha novamente" class="form-control" id="repeteSenha" required>
                         </div>
-                        <div class="mb-2 form-check d-flex" style="font-size: 9pt; gap: 12px;">
+                        <div class="form-check d-flex" style="font-size: 8pt; gap: 12px;">
                           <p>Esqueceu a Senha! <a class="clique" href="../pages/esqueceusenha.html" target="_blank">Clique Aqui!</a></p>
                           <p>Fazer Login! <a class="clique" href="../pages/login.html" target="_blank">Clique Aqui!</a></p>
                         </div>
-                        <div class="mb-4 d-flex justify-content-center my-2">
-                          <button type="submit" class="btn btn-primary" style="background-color: var(--azul);border:none;">CADASTRAR</button>
+                        <div class="mx-4 d-flex justify-content-center ">
+                          <button type="submit" class="btn btn-primary p-1" id="btnEnviar" style="background-color: var(--azul);border:none;">CADASTRAR</button>
                         </div>
                       </form>
                     </div>
@@ -98,12 +97,13 @@
               </section>
         </main>
 
-        <footer class="text-center py-2">
+        <footer class="text-center py-3">
             <h6>Todos os direitos reservados a @AntoniaBod - 2023</h6>
         </footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 <script src="../Js/jquery-3.7.1.js"></script>
 <script src="../js/script.js"></script>
+<script src="../Js/script2.js"></script>
 </body>
 </html>

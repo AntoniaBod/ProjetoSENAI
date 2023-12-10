@@ -11,17 +11,15 @@
 header,footer{
     background-color: var(--azul);
 }
-.card, .card img{
-    border-radius: 0%;
-    height: 500px;
-}
 
 .card{
     padding: 1rem;
+ 
     border: var(--preto) 2px solid;
 }
 
 .card button{
+    height: 30px;
     background-color: var(--rosa);
     color: var(--preto);
     border: none;
