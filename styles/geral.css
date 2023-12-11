@@ -45,3 +45,20 @@ form input{
     text-align: center;
 }
 
+@media screen and (min-width: 800px){
+
+    main{
+        margin: 40px;
+        height: 740px;
+    }
+    #formularioDiv, #formularioBanner{
+        margin: 40px;
+        height: 500px !important;
+    }
+    #formulario label{
+        font-size: 20pt !important;
+    }
+    #formulario input{
+        height: 30pt!important;
+    }
+}  
