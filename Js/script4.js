@@ -17,7 +17,7 @@ function checkout() {
     const finalTotal = parseFloat(document.getElementById('finalTotal').innerText);
     const paymentMethod = document.getElementById('paymentMethod').value;
 
-    if (finalTotal > 0 && paymentMethod) {
+    if (finalTotal > 0 && paymentMethod != "")  {
         console.log(`Compra no valor total de R$${finalTotal.toFixed(2)} usando ${paymentMethod}`);
         alert('Compra realizada com sucesso!');
     } else {

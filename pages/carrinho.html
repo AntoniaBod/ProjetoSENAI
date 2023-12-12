@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjetoPãoHamburguer</title> 
+    <title>Projeto</title> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/geral.css">
 </head>
@@ -63,78 +63,88 @@
                 </div>
               </nav>
         </header>
-        <main>
-            <section id="catalogoSection" class="gap-3">
-                <h2 class="my-2 text-center" style="color: var(--laranja);">CARRINHO DE COMPRAS</h2>
-                <div class="container-fluid d-flex flex-row text-center gap-4" >
-                  <div class="card">
-                    <div class="product" id="product1">
-                        <img  style="width: 13rem; height: 150px;" class="card-img-top" src="../images/img.png" alt="Product Image">
-                        <p>Produto 1</p>
-                        <p>Preço: R$ <span class="product-price">10.00</span></p>
-                        <label for="quantity1">Quantidade:</label>
-                        <input type="number" class="quantity-input" id="quantity1" value="1" min="0" onchange="updateTotal()">
-                        <p>Total: R$ <span class="total-price">10.00</span></p>
+        <main class="p-2">
+            <section id="catalogoSection" class="container-fluid text-center mx-0 my-2 p-0">
+                <h3 class="my-3" style="color: var(--laranja);">CATÁLOGO DE PRODUTOS</h3>
+                <div id="produtosGrupo" class="d-flex justify-content-center gap-2 flex-wrap container-fluid my-2 p-0">
+                    <!-- DOCE -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img.png" class="card-img-top" alt="">
+                        <div class="product" id="product1">
+                          <h7 class="card-title" style="color: var(--laranja);">PÃO HAMBUGUER DOCE</h7>
+                          <p class="card-text">PACOTE C/4 .</p>
+                          <p>Preço: R$ <span class="product-price">10.00</span></p>
+                          <label for="quantity1">Quantidade:</label>
+                          <input type="number" class="quantity-input" id="quantity1" value="1" min="1" onchange="updateTotal()">                 
+                          <p>Total: R$ <span class="total-price">10.00</span></p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="card">
-                    <div class="product" id="product2">
-                        <img style="width: 13rem; height: 150px;" class="card-img-top"  src="../images/img2.png" alt="Product Image">
-                        <p>Produto 2</p>
-                        <p>Preço: R$ <span class="product-price">16.00</span></p>
-                        <label for="quantity2">Quantidade:</label>
-                        <input type="number" class="quantity-input" id="quantity2" value="1" min="0" onchange="updateTotal()">
-                        <p>Total: R$ <span class="total-price">16.00</span></p>
+                    <!-- CARECA -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img2.png" class="card-img-top" alt="">
+                        <div class="product" id="product2">
+                          <h7 class="card-title" style="color: var(--laranja);">PÃO HAMBUGUER CARECA</h7>
+                          <p class="card-text">PACOTE C/ 8.</p>
+                          <p>Preço: R$ <span class="product-price">16.00</span></p>
+                          <label for="quantity1">Quantidade:</label>
+                          <input type="number" class="quantity-input" id="quantity1" value="1" min="1" onchange="updateTotal()">                        
+                          <p>Total: R$ <span class="total-price">16.00</span></p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="card">
-                    <div class="product" id="product3" >
-                        <img style="width: 13rem; height: 150px;" class="card-img-top" src="../images/img3.png" alt="Product Image">
-                        <p>Produto 3</p>
-                        <p>Preço: R$ <span class="product-price">20.00</span></p>
-                        <label for="quantity3">Quantidade:</label>
-                        <input type="number" class="quantity-input" id="quantity3" value="1" min="0" onchange="updateTotal()">
-                        <p>Total: R$ <span class="total-price">20.00</span></p>
+                    <!-- VEGANO -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img3.png" class="card-img-top" alt="">
+                        <div class="product" id="product3">
+                          <h7 class="card-title" style="color: var(--laranja);">PÃO HAMBUGUER VEGANO</h7>
+                          <p class="card-text">PACOTE C/ 4</p>
+                          <p>Preço: R$ <span class="product-price">20.00</span></p>
+                          <label for="quantity1" >Quantidade:</label>
+                          <input type="number" class="quantity-input" id="quantity1" value="1" min="1" onchange="updateTotal()">                         
+                          <p>Total: R$ <span class="total-price">20.00</span></p> 
+                        </div>
                     </div>
-                  </div> 
-                  <div class="card"> 
-                    <div class="product" id="product4">
-                        <img style="width: 13rem; height: 150px;" class="card-img-top"  src="../images/img4.png" alt="Product Image">
-                        <p>Produto 4</p>
-                        <p>Preço: R$ <span class="product-price">24.00</span></p>
-                        <label for="quantity4">Quantidade:</label>
-                        <input type="number" class="quantity-input" id="quantity4" value="1" min="0" onchange="updateTotal()">
-                        <p>Total: R$ <span class="total-price">24.00</span></p>
+                    <!-- BATATA -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img4.png" class="card-img-top" alt="">
+                        <div class="product" id="product4">
+                          <h7 class="card-title" style="color: var(--laranja);">MINI PÃO DE HAM. DE BATATA</h7>
+                          <p class="card-text">PACOTE C/12.</p>
+                          <p>Preço: R$ <span class="product-price">24.00</span></p>
+                          <label for="quantity1">Quantidade:</label>
+                          <input type="number" class="quantity-input" id="quantity1" value="1" min="1" onchange="updateTotal()">                         
+                          <p>Total: R$ <span class="total-price">24.00</span></p> 
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                  <h3 style="color: var(--laranja);" class="d-flex justify-content-center my-2" id="paymentMethod">FORMA DE PAGAMENTO
-                  <svg xmlns="http://www.w3.org/2000/svg"  width="28" height="28" fill="black" class="bi bi-credit-card-2-back-fill m-1" viewBox="0 0 16 16">
-                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1z"/>
-                  </svg>
-                  </h3><br>
-                  <select id="paymentMethod" class="my-2" style="height: 25pt;">
-                      <option value="creditCard">Cartão de Crédito</option>
-                      <option value="debito">Débito</option>
-                      <option value="pix">Pix</option>
-                      <option value="boleto">Boleto</option>
-                  </select>
-          
-                  <p>Total da Compra: R$ <span id="finalTotal">0.00</span></p>
-                  
-                  <button onclick="checkout()">Finalizar Compra</button>
-                </div>     
-      '   '</section>
+                 </div>
+                 <div class="d-flex flex-column align-items-center">
+                    <h3 style="color: var(--laranja);" class="d-flex justify-content-center my-2" id="paymentMethod">FORMA DE PAGAMENTO
+                    <svg xmlns="http://www.w3.org/2000/svg"  width="28" height="28" fill="black" class="bi bi-credit-card-2-back-fill m-1" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1z"/>
+                    </svg>
+                    </h3><br>
+                    <select id="paymentMethod" class="my-2" style="height: 25pt;">
+                        <option value="creditCard">Cartão de Crédito</option>
+                        <option value="debito">Débito</option>
+                        <option value="pix">Pix</option>
+                        <option value="boleto">Boleto</option>
+                    </select>
+            
+                    <p>Total da Compra: R$ <span id="finalTotal">0.00</span></p>
+                    
+                    <button onclick="checkout()">Finalizar Compra</button>
+                  </div>     
+            
+            </section>
         </main>
-      <footer class="text-center py-3">
-          <h6>Todos os direitos reservados a @AntoniaBod - 2023</h6>
-      </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
-<script src="../Js/jquery-3.7.1.js"></script>
-<script src="../Js/script.js"></script>
-<script src="../Js/script4.js"></script>
-</body>
-</html>
 
+        <footer class="text-center py-3">
+            <h6>Todos os direitos reservados a @AntoniaBod - 2023</h6>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="../Js/jquery-3.7.1.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../Js/script4.js"></script>
+        </body>
+        </html>
+        
