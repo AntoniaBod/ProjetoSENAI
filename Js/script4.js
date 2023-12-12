@@ -25,5 +25,4 @@ function checkout() {
     }
 }
 
-// Chama updateTotal inicialmente para exibir o total correto ao carregar a página
 updateTotal();
