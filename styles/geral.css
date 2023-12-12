@@ -45,6 +45,9 @@ form input{
     text-align: center;
 }
 
+.product{
+    border-radius: 3px solid black;
+}
 @media screen and (min-width: 800px){
 
     main{

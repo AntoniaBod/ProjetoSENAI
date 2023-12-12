@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/geral.css">
+</head>
+<body data-bs-theme="light">
+    <div id="root" class="container-fluid p-0 m-0">
+        <header>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse d-md-block justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="navbar-brand" href="#"><img id="imgLogo" style="width: 60px;" src="../images/logo.png" alt=""></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../Index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/sobrenos.html">Sobre Nós</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/catalogo.html">Catálogo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/cadastrar.html">Cadastrar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/esqueceusenha.html">Esqueceu a Senha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contatos.html">Contatos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../pages/carrinho.html">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4"
+                           viewBox="0 0 16 16">
+                           <path
+                             d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                         </svg>
+                         </a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                      <li>
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" role="switch" id="botaoTema">
+                          <label class="form-check-label" for="botaoTema">Tema : <span id="temaAtual">Claro</span></label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main class="p-2">
+            <section id="catalogoSection" class="container-fluid text-center mx-0 my-2 p-0">
+                <h3 class="my-3" style="color: var(--laranja);">CATÁLOGO DE PRODUTOS</h3>
+                <div id="produtosGrupo" class="d-flex justify-content-center gap-2 flex-wrap container-fluid my-2 p-0">
+                    <!-- DOCE -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img.png" class="card-img-top" alt="">
+                        <div class="product" id="product1">
+                          <h7 class="card-title" style="color: var(--laranja);">PÃO HAMBUGUER DOCE</h7>
+                          <p class="card-text">PACOTE C/4 .</p>
+                          <h5  class="product-price" style="color: var(--verde);">R$10,00</h5>
+                          <label for="quantity1">Quantidade:</label>
+                          <input type="number" class="quantity-input" id="quantity1" value="0" min="0" onchange="updateTotal()">                 
+                          <h5 class="total-price" style="color: var(--azul);">R$10,00</h5> 
+                        </div>
+                    </div>
+                    <!-- CARECA -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img2.png" class="card-img-top" alt="">
+                        <div class="product" id="product2">
+                          <h7 class="card-title" style="color: var(--laranja);">PÃO HAMBUGUER CARECA</h7>
+                          <p class="card-text">PACOTE C/ 8.</p>
+                          <h5 class="product-price" style="color: var(--verde);">R$16,00</h5>
+                          <label for="quantity1">Quantidade:</label>
+                          <input type="number" class="quantity-input" id="quantity1" value="0" min="0" onchange="updateTotal()">                        
+                          <h5 class="total-price" style="color: var(--azul);">R$16,00</h5> 
+                        </div>
+                    </div>
+                    <!-- VEGANO -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img3.png" class="card-img-top" alt="">
+                        <div class="product" id="product3">
+                          <h7 class="card-title" style="color: var(--laranja);">PÃO HAMBUGUER VEGANO</h7>
+                          <p class="card-text">PACOTE C/ 4</p>
+                          <h5 class="product-price" style="color: var(--verde);">R$20,00</h5>
+                          <label for="quantity1" >Quantidade:</label>
+                          <input type="number" class="quantity-input" id="quantity1" value="0" min="0" onchange="updateTotal()">                         
+                          <h5 class="total-price" style="color: var(--azul);">R$20,00</h5>  
+                        </div>
+                    </div>
+                    <!-- BATATA -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="../images/img4.png" class="card-img-top" alt="">
+                        <div class="product" id="product4">
+                          <h7 class="card-title" style="color: var(--laranja);">MINI PÃO DE HAM. DE BATATA</h7>
+                          <p class="card-text">PACOTE C/12.</p>
+                          <h5 class="product-price" style="color: var(--verde);">R$24,00</h5>
+                          <label for="quantity1">Quantidade:</label>
+                          <input type="number" class="quantity-input" id="quantity1" value="0" min="0" onchange="updateTotal()">                         
+                          <h5 class="total-price" style="color: var(--azul);">R$24,00</h5> 
+                        </div>
+                    </div>
+                 </div>
+                 <div class="d-flex flex-column align-items-center">
+                    <h3 style="color: var(--laranja);" class="d-flex justify-content-center my-2" id="paymentMethod">FORMA DE PAGAMENTO
+                    <svg xmlns="http://www.w3.org/2000/svg"  width="28" height="28" fill="black" class="bi bi-credit-card-2-back-fill m-1" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1z"/>
+                    </svg>
+                    </h3><br>
+                    <select id="paymentMethod" class="my-2" style="height: 25pt;">
+                        <option value="creditCard">Cartão de Crédito</option>
+                        <option value="debito">Débito</option>
+                        <option value="pix">Pix</option>
+                        <option value="boleto">Boleto</option>
+                    </select>
+            
+                    <p>Total da Compra: R$ <span id="finalTotal">0.00</span></p>
+                    
+                    <button onclick="checkout()">Finalizar Compra</button>
+                  </div>     
+            
+            </section>
+        </main>
+
+        <footer class="text-center py-3">
+            <h6>Todos os direitos reservados a @AntoniaBod - 2023</h6>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="../Js/jquery-3.7.1.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../Js/script4.js"></script>
+        </body>
+        </html>
+        

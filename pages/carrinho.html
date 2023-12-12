@@ -63,78 +63,78 @@
                 </div>
               </nav>
         </header>
-          <main id="home">
-            <!-- TOGGLE -->
-            <section id="conteudoCarrinho">
-              <p>
-                <button class="btnCarrinhoPerfil" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        <main>
+            <section id="catalogoSection" class="gap-3">
+                <h2 class="my-2 text-center" style="color: var(--laranja);">CARRINHO DE COMPRAS</h2>
+                <div class="container-fluid d-flex flex-row text-center gap-4" >
+                  <div class="card">
+                    <div class="product" id="product1">
+                        <img  style="width: 13rem; height: 150px;" class="card-img-top" src="../images/img.png" alt="Product Image">
+                        <p>Produto 1</p>
+                        <p>Preço: R$ <span class="product-price">10.00</span></p>
+                        <label for="quantity1">Quantidade:</label>
+                        <input type="number" class="quantity-input" id="quantity1" value="1" min="0" onchange="updateTotal()">
+                        <p>Total: R$ <span class="total-price">10.00</span></p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="product" id="product2">
+                        <img style="width: 13rem; height: 150px;" class="card-img-top"  src="../images/img2.png" alt="Product Image">
+                        <p>Produto 2</p>
+                        <p>Preço: R$ <span class="product-price">16.00</span></p>
+                        <label for="quantity2">Quantidade:</label>
+                        <input type="number" class="quantity-input" id="quantity2" value="1" min="0" onchange="updateTotal()">
+                        <p>Total: R$ <span class="total-price">16.00</span></p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="product" id="product3" >
+                        <img style="width: 13rem; height: 150px;" class="card-img-top" src="../images/img3.png" alt="Product Image">
+                        <p>Produto 3</p>
+                        <p>Preço: R$ <span class="product-price">20.00</span></p>
+                        <label for="quantity3">Quantidade:</label>
+                        <input type="number" class="quantity-input" id="quantity3" value="1" min="0" onchange="updateTotal()">
+                        <p>Total: R$ <span class="total-price">20.00</span></p>
+                    </div>
+                  </div> 
+                  <div class="card"> 
+                    <div class="product" id="product4">
+                        <img style="width: 13rem; height: 150px;" class="card-img-top"  src="../images/img4.png" alt="Product Image">
+                        <p>Produto 4</p>
+                        <p>Preço: R$ <span class="product-price">24.00</span></p>
+                        <label for="quantity4">Quantidade:</label>
+                        <input type="number" class="quantity-input" id="quantity4" value="1" min="0" onchange="updateTotal()">
+                        <p>Total: R$ <span class="total-price">24.00</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <h3 style="color: var(--laranja);" class="d-flex justify-content-center my-2" id="paymentMethod">FORMA DE PAGAMENTO
+                  <svg xmlns="http://www.w3.org/2000/svg"  width="28" height="28" fill="black" class="bi bi-credit-card-2-back-fill m-1" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1z"/>
                   </svg>
-                  Perfil Usuário
-                </button>
-              </p>
-              <div style="min-height: 120px;">
-                <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                  <div class="card card-body" style="width: 300px;">
-                    Nome Usuário <br>
-                    Dados Usuário <br>
-                    Email Usuário
-                    <a href="../Index.html">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
-                        <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15zM11 2h.5a.5.5 0 0 1 .5.5V15h-1zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
-                      </svg>
-                      Sair</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section id="colunasCarrinho">
-              <div class="container text-center">
-                <div class="row row-cols-2">
-                  <div class="colTopo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
-                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-                    </svg>
-                    <h5>Itens</h5>
-                    
+                  </h3><br>
+                  <select id="paymentMethod" class="my-2" style="height: 25pt;">
+                      <option value="creditCard">Cartão de Crédito</option>
+                      <option value="debito">Débito</option>
+                      <option value="pix">Pix</option>
+                      <option value="boleto">Boleto</option>
+                  </select>
+          
+                  <p>Total da Compra: R$ <span id="finalTotal">0.00</span></p>
                   
-                  </div>
-                  <div class="colTopo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
-                      <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
-                    </svg>
-                    <h5>Método de Envio</h5>
-    
-                  </div>
-                  <div class="colBaixo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                      <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-                    </svg>
-                    <h5>Total</h5>
-                  </div>
-                  <div class="colBaixo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card-2-back-fill" viewBox="0 0 16 16">
-                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1z"/>
-                    </svg>
-                    <h5>Método de Pagamento</h5>
-                  </div>
-                </div>
-              </div>
-    
-            </section>
-    
-    
+                  <button onclick="checkout()">Finalizar Compra</button>
+                </div>     
+      '   '</section>
         </main>
-
-        <footer class="text-center py-3">
+      <footer class="text-center py-3">
           <h6>Todos os direitos reservados a @AntoniaBod - 2023</h6>
       </footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
-<script src="Js/jquery-3.7.1.js"></script>
-<script src="js/script.js"></script>
+<script src="../Js/jquery-3.7.1.js"></script>
+<script src="../Js/script.js"></script>
+<script src="../Js/script4.js"></script>
 </body>
 </html>
 
